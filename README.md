@@ -28,7 +28,7 @@ By the end of this homework, you will have built your first functional React app
 1. In the terminal run the command: `git clone https://github.com/464squad/favlinks.git`
 2. cd into the new folder after it's finished cloning
 3. run command `npm install`
-4. run command `npm start`
+4. run command `npm run dev`
 5. Open project in VSCode
 
 ## What Are We Building? Application Screenshots
@@ -57,16 +57,16 @@ App (functional component our application renders first)
 
 - - - TableBody (functional component of our Table to display our links and delete button)
 
-In this project we're going to use 5 components in addition to our App.js
+In this project we're going to use 5 components in addition to our App.jsx
 
 The initial project contains the file structure you should use and some default code for some of these components and their styling. Your job will be to fill in the missing logic marked in with the `/* TODO */` comment blocks.
 
 ### Project Steps:
 
-1. Look through the App.js
+1. Look through the App.jsx
 2. Look through all of the files in the components folder for TODOs
-3. Create a simple HTML table using JSX in the Table.js
-4. Render your Table component properly in LinkContainer.js
+3. Create a simple HTML table using JSX in the Table.jsx
+4. Render your Table component properly in LinkContainer.jsx
 5. Review the code in TableHeader and TableBody
 6. Change your Table component to render the TableHeader and TableBody components
 7. Pass a prop called linkData to your Table component from the LinkContainer component
@@ -75,7 +75,7 @@ The initial project contains the file structure you should use and some default 
 10. Create a removeLink function in the LinkContainer class that updates the state and removes an item from favLinks
 11. Create a prop called removeLink that passes your removeLink function to your Table component
 12. Create a button in your TableBody with an onClick that calls this.props.removeLink and passes the index of the table row
-13. Create a Form component in your Form.js file with inputs and labels for name and URL
+13. Create a Form component in your Form.jsx file with inputs and labels for name and URL
 14. Set the initial state of the Form to be an object with empty properties for a link `name` and `URL`
 15. Update the state of the Form every time the name or URL field is changed
 16. Render the Form component below the Table component in your LinkContainer
