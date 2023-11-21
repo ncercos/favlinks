@@ -1,4 +1,4 @@
-function TableHeader(){
+function TableHeader() {
     /* responsible for rendering the head of our table with the appropriate columns */
     return(
         <thead>
@@ -31,12 +31,12 @@ const TableBody = (props) => {
     return <tbody>{rows}</tbody>
   }
 
+function Table(props) {
 
-function Table(){
     return(
         <table>
         <TableHeader/>
-        <TableBody/>
+        <TableBody linkData={props.linkData} removeLink={props.removeLink}/>
         </table>
     )
 }
